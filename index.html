@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IoT-Based LPG, Gas & Fire Safety System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: #0f0f1a;
+      color: #ffffff;
+    }
+    header {
+      background: linear-gradient(135deg, #1f1f2e, #2e2e3e);
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #bbb;
+    }
+    .robot-img {
+      width: 150px;
+      margin: 20px auto;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: #00ffff;
+      margin-bottom: 15px;
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .step {
+      background: #1a1a2b;
+      padding: 20px;
+      border-left: 5px solid #00ffff;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #1f1f2e;
+      color: #888;
+    }
+
+    .components {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .components div {
+      background: #2a2a3d;
+      padding: 15px;
+      border-radius: 5px;
+      border: 1px solid #333;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://cdn-icons-png.flaticon.com/512/1022/1022849.png" alt="Robot" class="robot-img">
+  <h1>IoT-Based LPG, Gas & Fire Safety Detection System</h1>
+  <p>Ensuring Home & Industrial Safety through Smart Sensing and Robotics</p>
+</header>
+
+<section class="section">
+  <h2>💡 About the System</h2>
+  <p>
+    This system detects hazardous LPG leaks, smoke, and fire using sensors connected to a microcontroller. Data is transmitted over IoT platforms to notify users and trigger alarms or automatic responses such as activating exhaust fans or fire sprinklers.
+  </p>
+</section>
+
+<section class="section">
+  <h2>⚙️ How It Works</h2>
+  <div class="steps">
+    <div class="step"><strong>Step 1:</strong> Sensors (MQ-2/MQ-5, flame sensor) detect LPG, gas, or fire presence.</div>
+    <div class="step"><strong>Step 2:</strong> Microcontroller (ESP32/Arduino) processes sensor data.</div>
+    <div class="step"><strong>Step 3:</strong> If danger is detected, a buzzer activates and a signal is sent to the cloud.</div>
+    <div class="step"><strong>Step 4:</strong> Users receive real-time alerts via smartphone app or dashboard.</div>
+    <div class="step"><strong>Step 5:</strong> Optional: Robotic arm or system triggers extinguishing system.</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>🔩 Components Used</h2>
+  <div class="components">
+    <div>ESP32 / Arduino UNO</div>
+    <div>MQ-2 / MQ-5 Gas Sensor</div>
+    <div>Flame Sensor</div>
+    <div>IoT Platform (Blynk, Firebase, etc.)</div>
+    <div>Buzzer & LEDs</div>
+    <div>Robotic Arm / Fan Module</div>
+    <div>Relay Module</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>🎞️ Animated Model (Placeholder)</h2>
+  <p style="color:#aaa;">You can embed a Lottie animation here for a robotic model or sensor response animation:</p>
+  <!-- Example of Lottie Animation -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_x62chJ.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px; margin:auto;"  loop  autoplay></lottie-player>
+</section>
+
+<footer>
+  <p>&copy; 2025 IoT Robotics Safety Systems. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
